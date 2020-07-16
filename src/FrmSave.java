@@ -1,6 +1,5 @@
 
 import java.awt.AWTException;
-import java.awt.Dimension;
 import java.awt.GraphicsDevice;
 import static java.awt.GraphicsDevice.WindowTranslucency.TRANSLUCENT;
 import java.awt.GraphicsEnvironment;
@@ -9,7 +8,6 @@ import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -24,7 +22,6 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JRootPane;
-import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
 import javax.swing.Timer;
 
@@ -49,13 +46,14 @@ public class FrmSave extends javax.swing.JFrame {
      *
      * @param lista
      */
+    
     public FrmSave(JList lista) {
         initComponents();
         this.model = (DefaultListModel) lista.getModel();
         setAcessibilidade();
         setIcone();
     }
-
+    
     private void setIcone() {
         // coloca uma figura na barra de título da janela
         URL url = this.getClass().getResource("icon.png");
@@ -131,6 +129,7 @@ public class FrmSave extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setAlwaysOnTop(true);
         setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
         setUndecorated(true);
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -143,17 +142,7 @@ public class FrmSave extends javax.swing.JFrame {
                 formMousePressed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 442, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 327, Short.MAX_VALUE)
-        );
+        getContentPane().setLayout(null);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

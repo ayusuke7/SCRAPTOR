@@ -275,10 +275,11 @@ public class FrmMain extends javax.swing.JFrame {
         jLabel2.setText("Prefixo ");
 
         txtPrefixo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtPrefixo.setText("Captura");
+        txtPrefixo.setText("Img-");
 
         rbCustom.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(rbCustom);
+        rbCustom.setSelected(true);
         rbCustom.setText("Definido");
         rbCustom.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -288,7 +289,6 @@ public class FrmMain extends javax.swing.JFrame {
 
         rbFullscreen.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(rbFullscreen);
-        rbFullscreen.setSelected(true);
         rbFullscreen.setText("Fullscreen");
         rbFullscreen.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -335,7 +335,6 @@ public class FrmMain extends javax.swing.JFrame {
 
         rbJPEG.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup2.add(rbJPEG);
-        rbJPEG.setSelected(true);
         rbJPEG.setText("JPEG");
         rbJPEG.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -345,6 +344,7 @@ public class FrmMain extends javax.swing.JFrame {
 
         rbPNG.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup2.add(rbPNG);
+        rbPNG.setSelected(true);
         rbPNG.setText("PNG");
 
         rbBMP.setBackground(new java.awt.Color(255, 255, 255));
