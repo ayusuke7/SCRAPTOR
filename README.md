@@ -17,4 +17,4 @@
 ![enter image description here](https://github.com/ayusuke7/SCRAPTOR/blob/master/imgs/1.png?raw=true)
 
 **Download**:
-https://drive.google.com/drive/folders/1TAiKpJH7w6CQUbC08qnYNTNxmJya1r01?usp=sharing
+https://github.com/ayusuke7/SCRAPTOR/releases/tag/release
